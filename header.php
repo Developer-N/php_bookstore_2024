@@ -21,9 +21,9 @@
                 <h1>فروشگاه کتاب</h1>
             </div>
             <div class="col-7" style="text align:left">
-                <a href="#"> <i class="bi bi-cart"></i> سبد خرید </a> |
-                <a href="search.php"><i class="bi bi-search"></i> جست و جو </a> |
-                <a href="contactus.php"> <i class="bi bi-person-badge"></i> تماس با ما </a> |
+                <a href="cart.php"> <i class="bi bi-cart"></i> سبد خرید </a>|
+                <a href="search.php"><i class="bi bi-search"></i> جست و جو </a>|
+                <a href="contactus.php"> <i class="bi bi-person-badge"></i> تماس با ما </a>|
                 <a href="login.php"> <i class="bi bi-box-arrow-in-right"></i> ورود اعضا </a>
             </div>
         </div>
