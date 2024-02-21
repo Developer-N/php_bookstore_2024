@@ -23,11 +23,11 @@
                 <li><a href="home.php"> پیشخوان </a></li>
                 <li><a href="profile.php"> پروفایل </a></li>
                 <li><a href="password.php"> تغییر کلمه عبور </a></li>
-                <li><a href="my orders.php"> سفارشات من </a></li>
-                <li><a href="book list.php"> مدیریت کتاب ها </a></li>
-                <li><a href="sub list.php"> مدیریت موضوعات </a></li>
-                <li><a href="user list.php"> مدیریت مشتریان </a></li>
-                <li><a href="order list.php"> مدیریت سفارشات </a></li>
+                <li><a href="my-orders.php"> سفارشات من </a></li>
+                <li><a href="book-list.php"> مدیریت کتاب ها </a></li>
+                <li><a href="sub-list.php"> مدیریت موضوعات </a></li>
+                <li><a href="user-list.php"> مدیریت مشتریان </a></li>
+                <li><a href="order-list.php"> مدیریت سفارشات </a></li>
             </ul>
         </div>
         <div class="col sm-10 main">
