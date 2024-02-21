@@ -8,7 +8,7 @@
 </div>
 <div class="container fluid footer2">
     <div class="container text-center">
-        <?= date('Y-m-d') ?> &copy;
+        <?= date('Y') ?> &copy;
         تمام حقوق این سایت متعلق به فروشگاه کتاب است.
     </div>
 </div>
