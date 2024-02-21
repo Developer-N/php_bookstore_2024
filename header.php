@@ -6,10 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>فرشگاه کتاب</title>
-    <link rel="stylesheet" href="bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="bootstrap-icons.min.css">
-    <link rel="stylesheet" href="myStyle.css">
-    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bs/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="bs/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/myStyle.css">
+    <script src="bs/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
@@ -33,9 +33,9 @@
     <div class="container">
         <ul>
             <li><a href="index.php"> صفحه اول </a></li>
-            <li> | <a href=" "> تاریخی </a></li>
-            <li> | <a href=" "> سیاسی </a></li>
-            <li> | <a href=" "> اقتصادی </a></li>
+            <li> | <a href="search.php?cat=historical">تاریخی </a></li>
+            <li> | <a href="search.php?cat=political"> سیاسی </a></li>
+            <li> | <a href="search.php?cat=economic"> اقتصادی </a></li>
         </ul>
     </div>
 </div>
