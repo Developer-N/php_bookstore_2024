@@ -12,6 +12,15 @@ $photoName = $_FILES["photo"]["name"];
 $photoType = $_FILES["photo"]["type"];
 $photoSize = $_FILES["photo"]["size"];
 $photoTempName = $_FILES["photo"]["tmp_name"];
+
+$folderPath = "../userPhotos";
+
+if (!file_exists($folderPath)) {
+    if (!mkdir($folderPath, 0777, true)) {
+        die("Failed to create folder.");
+    }
+}
+
 move_uploaded_file($photoTempName, "../userPhotos/$photoName");
 
 try {
