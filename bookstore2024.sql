@@ -1,22 +1,3 @@
-# فروشگاه کتاب با php
-
-<hr>
-
-#قالب صفحات عمومی
-
-<img src="https://github.com/Developer-N/php_bookstore_2024/blob/main/images/theme1.png"  alt="قالب صفحات عمومی"/>
-
-<hr>
-
-#قالب صفحات مدیریتی
-
-<img src="https://github.com/Developer-N/php_bookstore_2024/blob/main/images/theme2.png"  alt="قالب صفحات مدیریتی"/>
-
-<hr>
-
-#کد sql لازم برای ساخت پایگاه داده سایت
-
-```mysql
 CREATE DATABASE bookstore2024;
 
 USE bookstore2024;
@@ -70,4 +51,3 @@ CREATE TABLE orders(
     FOREIGN KEY(customerID) REFERENCES users(id),
     FOREIGN KEY(bookID) REFERENCES books(id)
 );
-```
