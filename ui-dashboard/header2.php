@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!doctype html>
 <html lang="fa">
 <head>
@@ -12,6 +13,10 @@
     <script src="../bs/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+<?php
+if (!isset($_SESSION['user']))
+    header('Location: http://localhost/php_bookstore_2024/')
+?>
 <div class="container fluid">
     <div class="row">
         <div class="col-sm-2 sidebar">
@@ -33,6 +38,9 @@
         <div class="col sm-10 main">
             <div class="header">
                 <?= $page_title ?>
-                <span class="user"> نام کاربری </span>
+                <span class="user">
+                    <?= $_SESSION['user'] ?>
+                <a class="text-danger" href="../controllers/logoutController.php">خروج</a>
+                </span>
             </div>
             <div class="content">
