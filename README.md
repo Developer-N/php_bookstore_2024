@@ -27,7 +27,7 @@ CREATE TABLE users(
     phone varchar(11) NOT NULL,
     email varchar(100),
     userName varchar(50) NOT NULL UNIQUE,
-    userPassword varchar(50) NOT NULL,
+    userPassword text NOT NULL,
     userType varchar(50) DEFAULT "customer",
     userState varchar(50) DEFAULT "active",
     userProfile varchar(250),

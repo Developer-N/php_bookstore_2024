@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!doctype html>
 <html lang="fa">
 <head>
@@ -24,7 +25,13 @@
                 <a href="cart.php"> <i class="bi bi-cart"></i> سبد خرید </a>|
                 <a href="search.php"><i class="bi bi-search"></i> جست و جو </a>|
                 <a href="contactus.php"> <i class="bi bi-person-badge"></i> تماس با ما </a>|
-                <a href="login.php"> <i class="bi bi-box-arrow-in-right"></i> ورود اعضا </a>
+                <?php if (isset($_SESSION['user'])) { ?>
+                    <a href="ui-dashboard/home.php"> <i class="bi bi-person-circle"></i> پنل کاربری </a>|
+                    <a class="text-danger" href="controllers/logoutController.php"> <i
+                                class="bi bi-box-arrow-right"></i> خروج </a>
+                <?php } else { ?>
+                    <a href="login.php"> <i class="bi bi-box-arrow-in-right"></i> ورود اعضا </a>
+                <?php } ?>
             </div>
         </div>
     </div>

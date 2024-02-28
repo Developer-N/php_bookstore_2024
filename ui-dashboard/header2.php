@@ -20,10 +20,12 @@ if (!isset($_SESSION['user']))
 <div class="container fluid">
     <div class="row">
         <div class="col-sm-2 sidebar">
-            <h3>
-                <i class="bi bi-book logo"></i>
-                فروشگاه کتاب
-            </h3>
+            <a href="../index.php" class="text-white">
+                <h3>
+                    <i class="bi bi-book logo"></i>
+                    فروشگاه کتاب
+                </h3>
+            </a>
             <ul>
                 <li><a href="home.php"> پیشخوان </a></li>
                 <li><a href="profile.php"> پروفایل </a></li>
@@ -40,7 +42,10 @@ if (!isset($_SESSION['user']))
                 <?= $page_title ?>
                 <span class="user">
                     <?= $_SESSION['user'] ?>
-                <a class="text-danger" href="../controllers/logoutController.php">خروج</a>
+                <a class="text-danger" href="../controllers/logoutController.php">
+                    <i class="bi bi-box-arrow-right"></i>
+                    خروج
+                </a>
                 </span>
             </div>
             <div class="content">
