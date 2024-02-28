@@ -20,6 +20,7 @@
                             <label class="form-check-label" for="remember_me">مرا به خاطر بسپار</label>
                         </div>
                         <button type="submit" class="btn btn-primary">ورود</button>
+                        <a class="p-2 text-success" href="register.php">ثبت نام</a>
                     </form>
                 </div>
             </div>
