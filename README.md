@@ -1,23 +1,22 @@
 # فروشگاه کتاب با php
 
-<hr>
 
-### **قالب صفحات عمومی**
+### قالب صفحات عمومی
 
-<div style="width: 90%; text-align: center;">
+<div align="center">
     <img style="width: 50%; border-radius: 20px;" src="https://github.com/Developer-N/php_bookstore_2024/blob/main/images/theme1.png"  alt="قالب صفحات عمومی"/>
 </div>
 
 <hr>
 
-### **قالب صفحات مدیریتی**
+### قالب صفحات مدیریتی
 
-<div style="width: 90%; text-align: center;">
+<div align="center">
     <img style="width: 50%; border-radius: 20px;" src="https://github.com/Developer-N/php_bookstore_2024/blob/main/images/theme2.png"  alt="قالب صفحات مدیریتی"/>
 </div>
 <hr>
 
-### **کد sql لازم برای ساخت پایگاه داده سایت**
+###  کد sql لازم برای ساخت پایگاه داده سایت
 
 ```mysql
 CREATE DATABASE bookstore2024;
@@ -32,8 +31,8 @@ CREATE TABLE users
     email        varchar(100),
     userName     varchar(50)  NOT NULL UNIQUE,
     userPassword text         NOT NULL,
-    userType     varchar(50) DEFAULT "customer",
-    userState    varchar(50) DEFAULT "active",
+    userType     varchar(50) DEFAULT 'customer',
+    userState    varchar(50) DEFAULT 'active',
     userProfile  varchar(250),
     registerDate datetime
 );
@@ -55,7 +54,7 @@ CREATE TABLE books
     publisher  varchar(150) NOT NULL,
     coverPhoto varchar(250),
     pageNumber int,
-    coverType  varchar(50) DEFAULT "normal",
+    coverType  varchar(50) DEFAULT 'normal',
     bookCount  int,
     extra      varchar(1000),
     categoryID int,
@@ -72,7 +71,7 @@ CREATE TABLE orders
     bookID      int,
     orderCount  int,
     orderDate   datetime,
-    orderStatus varchar(50) DEFAULT "registered",
+    orderStatus varchar(50) DEFAULT 'registered',
 
     FOREIGN KEY (customerID) REFERENCES users (id),
     FOREIGN KEY (bookID) REFERENCES books (id)
