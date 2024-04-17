@@ -14,8 +14,10 @@ try {
         die("خطا در اتصال به پایگاه داده: " . $conn->connect_error);
     }
 
-    $sql = "SELECT * FROM users WHERE username='$userName'";
-    $result = $conn->query($sql);
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username= ?");
+    $stmt->bind_param('s',$userName);
+    $stmt->execute();
+    $result = $stmt->get_result();
     if ($result->num_rows > 0) {
         $userInDB = $result->fetch_assoc();
         if (password_verify($userPassword, $userInDB['userPassword'])) {
