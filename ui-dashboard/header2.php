@@ -41,7 +41,7 @@ if (!isset($_SESSION['user']))
             <div class="header">
                 <?= $page_title ?>
                 <span class="user">
-                    <?= $_SESSION['user'] ?>
+                   نام کاربری:  <?= $_SESSION['user'] ?>
                 <a class="text-danger" href="../controllers/logoutController.php">
                     <i class="bi bi-box-arrow-right"></i>
                     خروج
